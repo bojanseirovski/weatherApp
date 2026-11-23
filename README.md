@@ -2,18 +2,30 @@
 It uses the weatherapi.com API to get the latest forecast for a selected city
 
 ### Architecture
-- Frontend: React SPA written in TypeScript (built with Vite). It has three screens: 
-    - login page, 
-    - dashboard with a 5-day forecast for a selected city
-    - settings page, the user sets a home city
+#### Frontend
+React SPA written in TypeScript (built with Vite). It has three screens: 
+- login page, 
+- dashboard with a 5-day forecast for a selected city
+- settings page, the user sets a home city
+##### Setup:
+- install all dependencies:
+    - npm -i 
+- Run locally 
+    - npm run dev
 
-- Backend: A monolithic Laravel REST API, uses SQLite for storage, authenticates with Laravel Sanctum bearer tokens. The following endpoints are available:
-    - POST /api/login
-    - POST /api/logout
-    - GET /api/user
-    - GET /api/city
-    - POST /api/city
-    - GET /api/city/search
+#### Backend
+A monolithic Laravel REST API, uses SQLite for storage, authenticates with Laravel Sanctum bearer tokens. The following endpoints are available:
+- POST /api/login
+- POST /api/logout
+- GET /api/user
+- GET /api/city
+- POST /api/city
+- GET /api/city/search
+##### Setup:
+- install all dependencies 
+    - composer install
+- run locally 
+    - php artisan serve
 
 
 ### Screenshots
