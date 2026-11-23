@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f6f8;
+  color: #1f2933;
+}
+
+a {
+  color: #2563eb;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #cbd2d9;
+  border-radius: 6px;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #e4e7eb;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #52606d;
+}
+
+.nav a.active {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 1rem 2rem;
+  font-size: 0.85rem;
+  color: #7b8794;
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.center {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.login {
+  width: 100%;
+  max-width: 360px;
+}
+
+.error {
+  color: #c81e1e;
+}
+
+.muted {
+  color: #7b8794;
+  margin: 0.25rem 0;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.day {
+  text-align: center;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.high {
+  font-weight: 700;
+}
+
+.profile {
+  max-width: 520px;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e4e7eb;
+}
+
+.label {
+  color: #7b8794;
+}
+
+.city-form {
+  margin-top: 1.5rem;
+}
+
+.results {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.results li button {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  background: #e4e7eb;
+  color: #1f2933;
+  text-align: left;
+}
